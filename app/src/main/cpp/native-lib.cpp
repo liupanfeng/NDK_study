@@ -420,7 +420,7 @@ JNIEXPORT void JNICALL native_diff(JNIEnv *env, jclass type,
     /*
      * 判断文件是否能被file_num 整除
      * 能整除就平分
-     * 不能整除就先评分file_num-1
+     * 不能整除就先平分file_num-1
      * */
     if (file_size% file_num==0){   //能平分的情况
         LOGD("均分");

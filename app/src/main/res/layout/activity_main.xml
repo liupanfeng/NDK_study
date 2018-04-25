@@ -27,5 +27,11 @@
         android:text="多线程"
         android:onClick="jniThread" />
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="图片压缩"
+        android:onClick="compassPic" />
+
 
 </LinearLayout>

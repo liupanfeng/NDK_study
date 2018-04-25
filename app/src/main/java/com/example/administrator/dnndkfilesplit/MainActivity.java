@@ -1,5 +1,6 @@
 package com.example.administrator.dnndkfilesplit;
 
+import android.content.Intent;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG="System.out.cpp";
 
     // Used to load the 'native-lib' library on application startup.
+    //获取sdcard路径
     private static final String SD_CARD_PATH= Environment.getExternalStorageDirectory().getAbsolutePath();
 
     @Override
@@ -139,5 +141,9 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG,"from_JNI_Again"+i);
     }
 
+
+    public void compassPic(View view){
+        Intent intent=new Intent();
+    }
 
 }
